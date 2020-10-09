@@ -671,7 +671,7 @@ data = cipher.decrypt(encrypted_data)
 
 # <font color='red'>案例：破解js加密爬取网易云音乐任意vip付费歌曲</font>
 
-<font color='red' size=4>*参见代码：[Spider_Codes/demo19_Music163_Vip_download_OOP.py](https://github.com/La0bALanG/Spider_Codes)*</font>
+<p><font color='red' size=4>参见代码：<a href="https://github.com/La0bALanG/Spider_Codes">Spider_Code/demo19_Music163_vip_download_OOP.py</a></font></p>
 
 - 目标
 
