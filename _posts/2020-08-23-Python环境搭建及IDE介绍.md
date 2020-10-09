@@ -1,11 +1,12 @@
+---
 layout: post
 title: Python环境搭建及IDE介绍
 date: 2020-08-23
 tags: 
-
-      - Python
-            - Linux
-            - Anaconda3 
+     - Python
+     - Linux
+     - Anaconda3 
+---
 
 # <font face="楷体"  color='blue'> Python基础语法</font>
 
