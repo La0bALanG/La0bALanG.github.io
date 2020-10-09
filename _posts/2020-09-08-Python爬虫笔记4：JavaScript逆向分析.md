@@ -473,7 +473,9 @@ AES加密过程是在一个4×4的[字节](https://baike.baidu.com/item/字节)�
 
 AddRoundKey
 
-[![将每个状态中的字节与该回合金钥做异或](https://bkimg.cdn.bcebos.com/pic/6609c93d70cf3bc7a6c87f8bd100baa1cc112a88?x-bce-process=image/resize,m_lfit,w_220,limit_1)](https://baike.baidu.com/pic/高级加密标准/468774/0/d35a10f422202a39dcc474e9?fr=lemma&ct=single)将每个状态中的字节与该回合金钥做异或
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201009172023853.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
+
+将每个状态中的字节与该回合金钥做异或
 
 —矩阵中的每一个[字节](https://baike.baidu.com/item/字节)都与该次回合金钥（round key）做XOR运算；每个子密钥由密钥生成方案产生。
 
@@ -672,7 +674,6 @@ data = cipher.decrypt(encrypted_data)
 # <font color='red'>案例：破解js加密爬取网易云音乐任意vip付费歌曲</font>
 
 <p><font color='red' size=4>参见代码：<a href="https://github.com/La0bALanG/Spider_Codes">Spider_Code/demo19_Music163_vip_download_OOP.py</a></font></p>
-
 - 目标
 
   - 输入任意歌手名称或歌曲名称，列出所有的查询结果

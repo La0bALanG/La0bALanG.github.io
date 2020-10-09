@@ -1,13 +1,11 @@
----
 layout: post
 title: Python环境搭建及IDE介绍
 date: 2020-08-23
 tags: 
-      - Python
-      - Linux
-      - Anaconda3 
 
----
+      - Python
+            - Linux
+            - Anaconda3 
 
 # <font face="楷体"  color='blue'> Python基础语法</font>
 
@@ -96,35 +94,35 @@ sudo chmod 777 ~/.bashrc
 ​	1.安装Python解释器。官网下载地址：http://www.python.org/
 ​	下载Windows专版安装包，如下图所示：
 
-![image-20200910101447654](../images/posts/image-20200910101447654.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635362.png#pic_center)
 
 ​	2.安装Python解释器。下载完毕后，找到安装文件，直接双击开始运行。安装选项一路默认下一步即可，直至自动开始执行安装程序。安装完毕后，退出，具体如图所示：
 
-![image-20200910101515667](../images/posts/image-20200910101515667.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635681.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 ​	3.配置环境变量。桌面图标找到“我的电脑”（WIN10已更改为计算机），右键，属性，弹出界面如图所示：
 
-![image-20200910101531168](../images/posts/image-20200910101531168.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635598.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 ​	选择高级系统设置，进入，如下图：
 
-![image-20200910101550217](../images/posts/image-20200910101550217.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 ​	看到系统变量，找到path，双击：
 
-![image-20200910101605051](../images/posts/image-20200910101605051.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635631.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 ​	选择新建：
 
-![image-20200910101624436](../images/posts/image-20200910101624436.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635561.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 ​	在输入区域中输入python.exe的绝对路径：
 
-![image-20200910101639223](../images/posts/image-20200910101639223.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635442.png#pic_center)
 
 ​	绝对路径如何查找：进入安装盘（C or D or其他盘符，具体视安装时路径选择而定，如果是一路默认下一步，则安装在C盘），搜索：python.exe,搜索到该文件后，右键，选择“打开文件位置”，鼠标点击地址栏，即可显示其绝对路径，复制粘贴到此即可。地址栏位置如图所示：
 
-![image-20200910101653685](../images/posts/image-20200910101653685.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 ​	本机因已安装好环境，故不展示具体安装过程。
 
@@ -133,7 +131,7 @@ sudo chmod 777 ~/.bashrc
 ​	1．下载Anaconda3 Windows专版安装包。下载路径同上文Linux专版下载路径，只不过选择：Anaconda3-5.3.1-Windows-x86_64.exe即可。
 ​	2.安装Anaconda3。双击下载的安装包，一路下一步即可，注意，此步骤需勾选该选项：
 
-![image-20200910101747854](../images/posts/image-20200910101747854.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 # IDE(集成开发环境)介绍
 
@@ -142,14 +140,14 @@ sudo chmod 777 ~/.bashrc
 ​	现如今宇宙最强地位岌岌可危的一款IDE，堪称经典。它是一种情怀，一种信仰。曾经你用的不是sublime你会被笑话不专业，曾经你不用sublime其他程序员小伙伴都不愿跟你玩……是的，确实是IDE中的传奇。Sublime其最强大的地方在于其多到爆炸强到可怕的扩展插件，这些插件活生生将一个神似editplus的文本编辑器变为一个超强的IDE。Sublime里安装上java的插件他就是java的IDE咯，安装上Python的插件他就是Python的IDE咯，安装上C++的插件他就是C++的编辑器咯……它还能安装各种编程语言的扩展插件。比如你羡慕pycharm的代码提示是吗？没关系sublime安装个代码提示扩展插件，你也有这功能了。
 ​	下载地址：http://www.sublimetext.com/
 
-![image-20200910101921600](../images/posts/image-20200910101921600.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635871.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 ## Visual Studio Code
 
 ​	当今的最强IDE，一路干掉pycharm，sublime的佼佼者，来自微软旗下的开源免费IDE，支持一切自定义及扩展，更可怕的是其拥有自主扩展库！对，所有扩展全部来自官方！无需到第三方搜索！其实，虽说windows长期以来并不开源，且售价昂贵，国人只能用着非法激活的官方Windows，但这并不能阻止人们公认为Windows是最好的操作系统。所以可能vscode也是因为出自微软名门才名气够大吧。
 ​	下载地址：https://code.visualstudio.com/
 
-![image-20200910101935928](../images/posts/image-20200910101935928.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635971.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 ## Pycharm
 
@@ -158,7 +156,7 @@ sudo chmod 777 ~/.bashrc
 ​	下载地址：https://www.jetbrains.com/pycharm/ 
 ​	Pycharm目前官方存在两个版本，一个叫社区版，一个叫专业版。这是官方的称呼。在我们程序员的眼中，无非只是个免费阉割版和收费加强版的区别了。所以，你可以选择使用社区版，毕竟免费的无需激活，安装直接用，但是阉割掉的功能，尤其对于强迫症患者来说，总觉得哪里不爽。我不一定用得到被阉割的功能啊？可是我可以不用，但他不能没有啊！
 
-![image-20200910102026593](../images/posts/image-20200910102026593.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635962.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 # Pycharm的安装及配置
 
@@ -166,7 +164,7 @@ sudo chmod 777 ~/.bashrc
 
 ​	官网地址：https://www.jetbrains.com/pycharm/download/
 
-![image-20200910144005008](../images/posts/image-20200910143853068.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125636674.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 ## 安装
 
@@ -208,18 +206,18 @@ sudo chmod 777 ~/.bashrc
 
 ​	Pycharm debug界面如下图所示：
 
-![image-20200910160107236](images/image-20200910160107236.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125636104.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 ​	debug使用思路：
 ​	通过在需要测试的某一段代码的起始位置和结束位置打断点进行测试：
 
-![image-20200910160233937](images/image-20200910160233937.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 ​	然后通过右键选择debug或点击右上角类似小虫子的图标开启debug测试：
 
-![image-20200910160555745](images/image-20200910160555745.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125635805.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
-![image-20200910160618545](images/image-20200910160618545.png)
+![请添加图片描述](https://img-blog.csdnimg.cn/20200927125634612.png#pic_center)
 
 ​	在需要测试的代码起始位置及结束位置的行标处通过鼠标左键点击打下断点，debug就会已此处断点为起始和终止位置，在这段区域内进行debug，开发者通过查看程序逐行运行时相对应的参数，变量或数据的值得变化判断程序具体出错在第几行以及具体什么错误。
 debug调试时为单步调试模式，但其划分为不同情况下的单步调试：
