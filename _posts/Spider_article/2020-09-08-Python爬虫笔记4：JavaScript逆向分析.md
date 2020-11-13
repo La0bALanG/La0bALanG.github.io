@@ -10,16 +10,17 @@ tags:
       - js逆向
 ---
 
-# <font face="楷体"  color='blue'> Python爬虫笔记4：JavaScript逆向分析</font>
+# <font face="楷体"  color='#e49123'> Python爬虫笔记4：JavaScript逆向分析</font>
 
-<p><font face="楷体" color='blue'>作者：Barranzi_</font></p>
-<p><font face="楷体" color='blue'>个人github主页：[github](https://github.com/La0bALanG)</font></p>
-<p><font face="楷体" color='blue'>个人邮箱：awc19930818@outlook.com</font></p>
-<p><font face="楷体" color='blue'>新时代的铁饭碗：一辈子不管走到哪里都有饭吃(还能吃上热乎的)。——佚名</font></p>
+<p><font face="楷体" color='#e49123'>作者：Barranzi_</font></p>
+<p><font face="楷体" color='#e49123'>个人github主页：[github](https://github.com/La0bALanG)</font></p>
+<p><font face="楷体" color='#e49123'>个人邮箱：awc19930818@outlook.com</font></p>
+<p><font face="楷体" color='#e49123'>新时代的铁饭碗：一辈子不管走到哪里都有饭吃(还能吃上热乎的)。——佚名</font></p>
 <p><font face="楷体" color='red'> 免责声明：</font></p>
 <p><font face='楷体' color='red'>		本系列笔记撰写初衷就是为了分享个人知识以及个人学习历程中的感悟及思考，所涉及到的内容`仅供学习与交流`，请勿用作`非法或商业用途`！由此引发的任何法律纠纷`后果自负`，与作者本人无关！</font></p>
 <p><font face="楷体"  color='red'>版权声明：</font></p>
 <p><font face='楷体' color='red'>		未经作者本人授权，禁止转载！请尊重原创！</font></p>
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200926112825777.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
 
 <p><font face="楷体" color='blue'>注：本文所有代码、案例测试环境：1.Linux -- 系统版本：Ubuntu20.04 LTS   2.windows -- 系统版本：WIN10 64位家庭版</font></p>
@@ -29,11 +30,11 @@ tags:
 
 ## JavaScript反爬虫原理及原因
 
-当前文我们所见过的绝大部分反爬机制都无效的时候，js反爬或许可能成为最后一根救命稻草。
+​	当前文我们所见过的绝大部分反爬机制都无效的时候，js反爬或许可能成为最后一根救命稻草。
 
-前文我们说到，爬虫与网站安全，一个是矛，一个是盾。你网站安全与否，第一看安全措施是否到位，第二，还得看数据价值是否会勾引到“爬虫”的注意。也就是说，除非没有爬虫盯上你的数据，否则反爬措施你必须步步到位！哈哈。
+​	前文我们说到，爬虫与网站安全，一个是矛，一个是盾。你网站安全与否，第一看安全措施是否到位，第二，还得看数据价值是否会勾引到“爬虫”的注意。也就是说，除非没有爬虫盯上你的数据，否则反爬措施你必须步步到位！哈哈。
 
-那问题来了，如果常见的反爬我们都已经做了，发现服务器还是受到大量爬虫请求的压力，该怎么办呢？此时，JavaScript反爬虫，可能会是效果最好的一个。为什么呢？
+​	那问题来了，如果常见的反爬我们都已经做了，发现服务器还是受到大量爬虫请求的压力，该怎么办呢？此时，JavaScript反爬虫，可能会是效果最好的一个。为什么呢？
 
 ​	你headers反爬？对不起我可以伪造User-Agent啊，我创建自己的User-Agent池，随机更换，你拿我有招么？这些信息都是你网站response里带好的哟，我祖传CV大法(复制粘贴)就能解决；
 
@@ -533,13 +534,11 @@ RSA算法的具体描述如下： [5]
 
 ![img](https://bkimg.cdn.bcebos.com/formula/f0dac18152076624d87832b62709895c.svg)
 
- [5] ；
-
 （2）任意选取一个大整数e，满足
 
 ![img](https://bkimg.cdn.bcebos.com/formula/c33d8c66364a636b051d82f0ee202a36.svg)
 
- ，整数e用做加密钥（注意：e的选取是很容易的，例如，所有大于p和q的素数都可用） [5] ；
+ ，整数e用做加密钥（注意：e的选取是很容易的，例如，所有大于p和q的素数都可用）；
 
 （3）确定的解密钥d，满足
 
@@ -553,19 +552,19 @@ RSA算法的具体描述如下： [5]
 
 ![img](https://bkimg.cdn.bcebos.com/formula/679e809a0d964785d0aa4cfcb4218742.svg)
 
-，则很容易计算出d [5] ；
+，则很容易计算出d
 
-（4）公开整数n和e，秘密保存d [5] ；
+（4）公开整数n和e，秘密保存d
 
-（5）将明文m（m<n是一个整数）加密成密文c，加密算法为 [5] 
+（5）将明文m（m<n是一个整数）加密成密文c，加密算法为
 
 ![img](https://bkimg.cdn.bcebos.com/formula/5947116555169dc6fe9e3f5cdf347706.svg)
 
-（6）将密文c解密为明文m，解密算法为 [5] 
+（6）将密文c解密为明文m，解密算法为
 
 ![img](https://bkimg.cdn.bcebos.com/formula/1a8b337167e4d4b2c23855d88ec4c67f.svg)
 
-然而只根据n和e（注意：不是p和q）要计算出d是不可能的。因此，任何人都可对明文进行加密，但只有授权用户（知道d）才可对密文解密 [5] 。
+然而只根据n和e（注意：不是p和q）要计算出d是不可能的。因此，任何人都可对明文进行加密，但只有授权用户（知道d）才可对密文解密
 
 ### Python处理AES加密及RSA加密的标准库——[PyCryptodome](https://www.pycryptodome.org/en/latest/)
 
