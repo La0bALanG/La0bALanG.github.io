@@ -451,6 +451,51 @@ tags:
   ```mysql
   alter table hobby add tel char(11) after name;
   alter table hobby modify tel char(16);
-  alter table hobby change tel phone char(16)
-  ;
+  alter table hobby change tel phone char(16);
   ```
+
+- 时间类型数据
+  - 日期 ： DATE
+  - 日期时间： DATETIME，TIMESTAMP
+  - 时间： TIME
+  - 年份 ：YEAR
+
+  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201116135122839.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2F3YzE5OTMwODE4,size_16,color_FFFFFF,t_70#pic_center)
+  - 时间格式
+
+  ```sql
+  date ："YYYY-MM-DD"
+  time ："HH:MM:SS"
+  datetime ："YYYY-MM-DD HH:MM:SS"
+  timestamp ："YYYY-MM-DD HH:MM:SS"
+  ```
+
+  > 注意:
+  >
+  > 1. datetime ：以系统时间存储
+  > 2. timestamp ：以标准时间存储但是查看时转换为系统时区，所以表现形式和datetime相同
+
+  ```mysql
+  create table marathon (
+      id int primary key auto_increment,
+      athlete varchar(32),birthday date,
+      registration_time datetime,
+      performance time
+  );
+  ```
+
+  - 日期时间函数
+
+    - now() 返回服务器当前日期时间，格式对应datetime类型
+
+  - 时间操作
+
+    时间类型数据可以进行比较和排序等操作，在写时间字符串时尽量按照标准格式书写。
+
+  ```mysql
+    select * from marathon where birthday>='2000-01-01';
+    select * from marathon where birthday>="2000-07-01" and performance<="2:30:00";
+  ```
+
+  
+
