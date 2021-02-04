@@ -288,7 +288,7 @@ tags:
   ```mysql
   #创建班级表
   create table class_1(
-  	id in primary key auto_increment,
+  	id int primary key auto_increment,
       name varchar(32) not null,
       age tinyint unsigned not null,
       sex enum('w','m'), 

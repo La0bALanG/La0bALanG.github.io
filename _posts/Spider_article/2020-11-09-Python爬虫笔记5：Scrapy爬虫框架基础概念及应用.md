@@ -130,6 +130,20 @@ tags:
 pip install Scrapy -i https://pypi.douban.com/simple
 ```
 
+安装过程中如果报错，是因为 Twisted 依赖与当前本机python版本不一致，需要去官网：https://www.lfd.uci.edu/~gohlke/pythonlibs/ 下载 Twised 对应本机python版本的依赖包：
+
+![Snipaste_2021-01-23_15-57-01](../images/Snipaste_2021-01-23_15-57-01.png)
+
+使用如下命令安装：
+
+```python
+pip install D:\virtualenv_space\Twisted-20.3.0-cp39-cp39-win_amd64.whl
+```
+
+手动安装完毕后再执行安装scrapy命令即可成功安装。
+
+
+
 ## Scrapy基本操作及配置介绍
 
 - 基本命令
